@@ -56,10 +56,38 @@
           "settings": {
             "proposal_product": "14k-interlinked-earrings"
           }
+        },
+        "product_VCiycc": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "5-panel-hat"
+          }
+        },
+        "product_zG3DUa": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "cydney-plaid"
+          }
+        },
+        "product_XpG3cj": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "ayers-chambray"
+          }
+        },
+        "product_LmEW7j": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "dji-mavic-air-fly-more-combo-quadcopter-with-remote-controller-arctic-white"
+          }
         }
       },
       "block_order": [
-        "product_W7TiQa"
+        "product_W7TiQa",
+        "product_VCiycc",
+        "product_zG3DUa",
+        "product_XpG3cj",
+        "product_LmEW7j"
       ],
       "settings": {
         "include_margins": true
