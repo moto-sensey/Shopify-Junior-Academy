@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -14,7 +23,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -37,6 +46,23 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "section_slider_products_DxhpTC": {
+      "type": "section-slider-products",
+      "blocks": {
+        "product_W7TiQa": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "14k-interlinked-earrings"
+          }
+        }
+      },
+      "block_order": [
+        "product_W7TiQa"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "featured_collection": {
@@ -70,6 +96,7 @@
   },
   "order": [
     "image_banner",
+    "section_slider_products_DxhpTC",
     "featured_collection"
   ]
 }
