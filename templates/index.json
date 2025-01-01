@@ -80,6 +80,36 @@
           "settings": {
             "proposal_product": "dji-mavic-air-fly-more-combo-quadcopter-with-remote-controller-arctic-white"
           }
+        },
+        "product_PbNVeW": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "18k-bloom-pendant"
+          }
+        },
+        "product_eBJWeL": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "camp-stool"
+          }
+        },
+        "product_UaqG4N": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "football-shoes-for-women"
+          }
+        },
+        "product_mkHFk6": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "guaranteed"
+          }
+        },
+        "product_xzfwYJ": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "protocol-videodrone-ap-drone-with-remote-controller-black-3"
+          }
         }
       },
       "block_order": [
@@ -87,11 +117,14 @@
         "product_VCiycc",
         "product_zG3DUa",
         "product_XpG3cj",
-        "product_LmEW7j"
+        "product_LmEW7j",
+        "product_PbNVeW",
+        "product_eBJWeL",
+        "product_UaqG4N",
+        "product_mkHFk6",
+        "product_xzfwYJ"
       ],
-      "settings": {
-        "include_margins": true
-      }
+      "settings": {}
     },
     "featured_collection": {
       "type": "featured-collection",
