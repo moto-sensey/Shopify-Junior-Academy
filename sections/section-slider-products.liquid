@@ -4,7 +4,7 @@
     <div class="slider-product-proposal__content">
       <h2 class="slider-product-proposal__title">Proposal products</h2>
       <div class="slider-product-proposal__subtitle">
-        Product subtitle...
+        Product slider subtitle...
       </div>
     </div>
     <div class="slider-product-proposal__slider">
@@ -19,11 +19,11 @@
                   alt="{{ product.featured_image.alt | default: product.title }}" loading="lazy">
               </div>
               <h4 class="slider-item__title">{{ product.title }}</h4>
-              {%- if product.content != blank -%}
+              <!--{%- if product.content != blank -%}
                 <div class="slider-item__content">
                   {{ product.content | truncate: 100, "..."  }}
                 </div>
-              {%- endif -%}
+              {%- endif -%}-->
               <div class="slider-item__price">
                 {{ product.price | money_with_currency }}
               </div>
