@@ -15,8 +15,8 @@
             <div class="slider-product-proposal__slider-item">
               <a href="{{ product.url }}" class="slider-item__link"></a>
               <div class="slider-item__image">
-                <img class="slider-item__picture" src="/cdn/shop/{{ product.featured_image | image_url: 'medium' }}" width="250" height="300" 
-                  alt="{{ product.featured_image.alt | default: product.title }}" loading="lazy">
+                <img class="slider-item__picture" src="{{ product.featured_image | image_url: width: 200}}"
+                     width="" height="" alt="{{ product.featured_image.alt | default: product.title }}" loading="lazy">
               </div>
               <h4 class="slider-item__title">{{ product.title }}</h4>
               <!--{%- if product.content != blank -%}
@@ -89,18 +89,18 @@
       "type": "range",
       "id": "slider_items_tab",
       "min": 1,
-      "max": 3,
+      "max": 4,
       "step": 1,
-      "label": "Items per page",
+      "label": "Items per tab",
       "default": 2
     },
     {
       "type": "range",
       "id": "slider_items_mob",
       "min": 1,
-      "max": 2,
+      "max": 3,
       "step": 1,
-      "label": "Items per page",
+      "label": "Items per mob",
       "default": 1
     }
   ],

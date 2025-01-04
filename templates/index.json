@@ -99,6 +99,12 @@
             "proposal_product": "football-shoes-for-women"
           }
         },
+        "product_b7nkFD": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "dji-spark-fly-more-combo-quadcopter-alpine-white"
+          }
+        },
         "product_mkHFk6": {
           "type": "product",
           "settings": {
@@ -109,6 +115,24 @@
           "type": "product",
           "settings": {
             "proposal_product": "protocol-videodrone-ap-drone-with-remote-controller-black-3"
+          }
+        },
+        "product_wQB7Nq": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "canvas-lunch-bag"
+          }
+        },
+        "product_fDDGWL": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "dawson-trolley"
+          }
+        },
+        "product_ejNL4F": {
+          "type": "product",
+          "settings": {
+            "proposal_product": "dji-mavic-pro-platinum-with-remote-controller-platinum"
           }
         }
       },
@@ -121,10 +145,24 @@
         "product_PbNVeW",
         "product_eBJWeL",
         "product_UaqG4N",
+        "product_b7nkFD",
         "product_mkHFk6",
-        "product_xzfwYJ"
+        "product_xzfwYJ",
+        "product_wQB7Nq",
+        "product_fDDGWL",
+        "product_ejNL4F"
       ],
-      "settings": {}
+      "settings": {
+        "slider_items": 4,
+        "slider_items_tab": 2,
+        "slider_items_mob": 1
+      }
+    },
+    "image_get_links_LGV7jP": {
+      "type": "image-get-links",
+      "settings": {
+        "get_image": "shopify://shop_images/9_dc40da87-6ead-4b4b-be43-457eb7a531ff.jpg"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -158,6 +196,7 @@
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
+    "image_get_links_LGV7jP",
     "featured_collection"
   ]
 }
