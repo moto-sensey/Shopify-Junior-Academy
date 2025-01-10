@@ -15,15 +15,17 @@
             <div class="slider-product-proposal__slider-item">
               <a href="{{ product.url }}" class="slider-item__link"></a>
               <div class="slider-item__image">
-                <img class="slider-item__picture" src="{{ product.featured_image | image_url: width: 200}}"
-                     width="" height="" alt="{{ product.featured_image.alt | default: product.title }}" loading="lazy">
+                {{ product.featured_image | image_url: width: 200 | image_tag: class: 'slider-item__picture', loading:'lazy'}}" 
               </div>
-              <h4 class="slider-item__title">{{ product.title }}</h4>
-              <!--{%- if product.content != blank -%}
-                <div class="slider-item__content">
-                  {{ product.content | truncate: 100, "..."  }}
-                </div>
-              {%- endif -%}-->
+              <h4 class="slider-item__title">{{ product.title | truncate: 35}}</h4>
+              {%comment %}
+              {%- if product.content != blank -%}
+                {{ product.content | truncate: 100 }}
+              {%- endif -%}
+              {% endcomment %}
+              <div class="slider-item__content">
+                <p>Rerum eveniet eius voluptates consectetur dicta quidem.</p>
+              </div>
               <div class="slider-item__price">
                 {{ product.price | money_with_currency }}
               </div>
