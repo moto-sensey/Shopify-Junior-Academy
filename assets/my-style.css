@@ -116,3 +116,14 @@ a.slider-item__link:hover + .slider-item__image .slider-item__picture{
 .slider-item__price{
 
 }
+
+/* custom section 00 START */
+.prods-block__container{
+    display: flex;
+
+}
+.prods-block__item .item-content{
+    display: flex;
+    flex-direction: column;
+}
+/* custom section 00 END */
