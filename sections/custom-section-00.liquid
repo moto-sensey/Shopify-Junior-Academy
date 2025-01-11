@@ -1,11 +1,10 @@
 {%- if section.blocks.size > 0 -%}
   <div class="prods-block">
-    <div class="page-width prods-block__container">
+    <div class=" page-width prods-block__container">
           {%- for block in section.blocks -%}
             {%- if block.settings.prod_block != blank -%}
               {%- assign product = block.settings.prod_block -%}
               <div class="prods-block__item">
-                
                 <div class="item-content">
                   <h4 class="item-content__title">{{ product.title }}</h4>
                   {%comment %}
@@ -15,12 +14,12 @@
                     {%- endif -%}
                     </div>
                   {% endcomment %}
-                  <div class="slider-item__content">
+                  <div class="item-content__text">
                     <p>Rerum eveniet eius voluptates consectetur dicta quidem.</p>
                   </div>
                 </div>
                 <div class="item-img">
-                  {{ product.featured_image | image_url: width: 200 | image_tag }}
+                  {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
                 </div>
               </div>
             {%- endif -%}
@@ -28,11 +27,6 @@
     </div>
   </div>
   {%- endif -%}
-<div class="{% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {%- for block in section.blocks -%}
-      {% render block %}
-    {%- endfor -%}
-  </div>
   
   {% schema %}
   {
