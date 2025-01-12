@@ -158,6 +158,35 @@
         "slider_items_mob": 1
       }
     },
+    "custom_section_00_mmjxRT": {
+      "type": "custom-section-00",
+      "blocks": {
+        "product_fNJ8jE": {
+          "type": "product",
+          "settings": {
+            "prod_block": "camp-stool"
+          }
+        },
+        "product_qUVqHU": {
+          "type": "product",
+          "settings": {
+            "prod_block": "canvas-lunch-bag"
+          }
+        },
+        "product_6THP9x": {
+          "type": "product",
+          "settings": {
+            "prod_block": "ayers-chambray"
+          }
+        }
+      },
+      "block_order": [
+        "product_fNJ8jE",
+        "product_qUVqHU",
+        "product_6THP9x"
+      ],
+      "settings": {}
+    },
     "custom_section_00_T7PGNn": {
       "type": "custom-section-00",
       "blocks": {
@@ -225,6 +254,7 @@
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
+    "custom_section_00_mmjxRT",
     "custom_section_00_T7PGNn",
     "image_get_links_LGV7jP",
     "featured_collection"
