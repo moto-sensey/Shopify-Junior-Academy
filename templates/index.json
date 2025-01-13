@@ -185,7 +185,9 @@
         "product_qUVqHU",
         "product_6THP9x"
       ],
-      "settings": {}
+      "settings": {
+        "reverse_of_section": false
+      }
     },
     "custom_section_00_T7PGNn": {
       "type": "custom-section-00",
@@ -214,7 +216,9 @@
         "product_UrNy6j",
         "product_kYVUe7"
       ],
-      "settings": {}
+      "settings": {
+        "reverse_of_section": true
+      }
     },
     "image_get_links_LGV7jP": {
       "type": "image-get-links",
