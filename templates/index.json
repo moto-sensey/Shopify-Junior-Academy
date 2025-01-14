@@ -226,18 +226,45 @@
     "custom_section_01_VkFAjd": {
       "type": "custom-section-01",
       "blocks": {
-        "product_gLqTRb": {
+        "product_MBjUHw": {
           "type": "product",
           "settings": {
-            "prod_block": "5-panel-hat",
+            "prod_block": "dji-mavic-pro-platinum-with-remote-controller-platinum-1",
+            "product_list": []
+          }
+        },
+        "product_8eKcMG": {
+          "type": "product",
+          "settings": {
+            "prod_block": "",
             "product_list": [
               "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
               "ayers-chambray"
             ]
           }
+        },
+        "product_H6yqx9": {
+          "type": "product",
+          "settings": {
+            "prod_block": "",
+            "product_list": [
+              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+              "ayers-chambray"
+            ]
+          }
+        },
+        "product_gLqTRb": {
+          "type": "product",
+          "settings": {
+            "prod_block": "5-panel-hat",
+            "product_list": []
+          }
         }
       },
       "block_order": [
+        "product_MBjUHw",
+        "product_8eKcMG",
+        "product_H6yqx9",
         "product_gLqTRb"
       ],
       "settings": {}
