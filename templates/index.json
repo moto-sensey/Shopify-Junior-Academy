@@ -158,66 +158,35 @@
         "slider_items_mob": 1
       }
     },
-    "custom_section_00_mmjxRT": {
+    "custom_section_00_RQkBDp": {
       "type": "custom-section-00",
       "blocks": {
-        "product_fNJ8jE": {
+        "product_GcqYtq": {
           "type": "product",
           "settings": {
-            "prod_block": "camp-stool"
+            "prod_block": "dawson-trolley"
           }
         },
-        "product_qUVqHU": {
+        "product_DjbrkG": {
           "type": "product",
           "settings": {
-            "prod_block": "canvas-lunch-bag"
+            "prod_block": "snow-peak-titanium-single-wall-cup"
           }
         },
-        "product_6THP9x": {
+        "product_wPTjEh": {
           "type": "product",
           "settings": {
-            "prod_block": "ayers-chambray"
+            "prod_block": "cydney-plaid"
           }
         }
       },
       "block_order": [
-        "product_fNJ8jE",
-        "product_qUVqHU",
-        "product_6THP9x"
+        "product_GcqYtq",
+        "product_DjbrkG",
+        "product_wPTjEh"
       ],
       "settings": {
         "reverse_of_section": false
-      }
-    },
-    "custom_section_00_T7PGNn": {
-      "type": "custom-section-00",
-      "blocks": {
-        "product_Ke9Qdm": {
-          "type": "product",
-          "settings": {
-            "prod_block": "5-panel-hat"
-          }
-        },
-        "product_UrNy6j": {
-          "type": "product",
-          "settings": {
-            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-6"
-          }
-        },
-        "product_kYVUe7": {
-          "type": "product",
-          "settings": {
-            "prod_block": "dji-mavic-pro-platinum-with-remote-controller-platinum-1"
-          }
-        }
-      },
-      "block_order": [
-        "product_Ke9Qdm",
-        "product_UrNy6j",
-        "product_kYVUe7"
-      ],
-      "settings": {
-        "reverse_of_section": true
       }
     },
     "image_get_links_LGV7jP": {
@@ -253,14 +222,33 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_section_01_VkFAjd": {
+      "type": "custom-section-01",
+      "blocks": {
+        "product_gLqTRb": {
+          "type": "product",
+          "settings": {
+            "prod_block": "5-panel-hat",
+            "product_list": [
+              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+              "ayers-chambray"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "product_gLqTRb"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
-    "custom_section_00_mmjxRT",
-    "custom_section_00_T7PGNn",
+    "custom_section_00_RQkBDp",
     "image_get_links_LGV7jP",
-    "featured_collection"
+    "featured_collection",
+    "custom_section_01_VkFAjd"
   ]
 }

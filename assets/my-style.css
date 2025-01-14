@@ -118,56 +118,56 @@
                     }
 
 /* custom section 00 START */
-.prods-blocks{
+.three-prods-section{
     padding: 15px 0;
 }
-    .prods-blocks__container, .prods-blocks__item{
+    .three-prods-section__container, .three-prods-section__item{
         display: flex;
         
     }
-    .prods-blocks__container{
+    .three-prods-section__container{
         height: 300px;
         width:100%;
         position: relative;
     }
-    .prods-blocks__reverse{
+    .three-prods-section__reverse{
         flex-direction: row-reverse;
     }
     
-        .prods-blocks__item{
+        .three-prods-section__item{
             box-shadow: 0px 0px 3px #646464;
             overflow: hidden;
             border-radius: 10px;
             
             
         }
-        .prods-blocks__item:nth-child(3n+1){
+        .three-prods-section__item:nth-child(3n+1){
             width: 50%;
             height: inherit;
             margin-right: 15px;
         }
         
-        .prods-blocks__item:nth-child(3n+2){
+        .three-prods-section__item:nth-child(3n+2){
             
             height: calc(50% - 15px);
             width: 50%;
             margin-left: 15px;
         }
-        .prods-blocks__item:nth-child(3n+3){
+        .three-prods-section__item:nth-child(3n+3){
             position: absolute;
             bottom:0;
             right: 0;
             height: calc(50% - 15px);
             width: calc(50% - 15px);
         }
-        .prods-blocks__reverse .prods-blocks__item:nth-child(3n+3){
+        .three-prods-section__reverse .three-prods-section__item:nth-child(3n+3){
             left: 0;
         }
-        .prods-blocks__reverse .prods-blocks__item:nth-child(3n+1){
+        .three-prods-section__reverse .three-prods-section__item:nth-child(3n+1){
             margin-left: 15px;
             margin-right: 0;
         }
-        .prods-blocks__reverse .prods-blocks__item:nth-child(3n+2){
+        .three-prods-section__reverse .three-prods-section__item:nth-child(3n+2){
             margin-left: 0;
             margin-right: 15px;
         }
@@ -177,31 +177,31 @@
       flex-direction: column;
   }
   */
-            .item-content{
+            .three-prods-section__item .item-content{
                 display: flex;
                 flex-direction: column;
                 color: #ffffff;
                 overflow: hidden;
             }
-            .prods-blocks__item:nth-child(3n+1) .item-content{
+            .three-prods-section__item:nth-child(3n+1) .item-content{
                 background-color: #00424E;
                 width: 50%;
                 padding: 20px;
             }
-            .prods-blocks__item:nth-child(3n+2) .item-content, .prods-blocks__item:nth-child(3n+3) .item-content{
+            .three-prods-section__item:nth-child(3n+2) .item-content, .three-prods-section__item:nth-child(3n+3) .item-content{
                 background-color: #F58557;
                 width: 70%;
                 padding: 20px;
             }
-                .item-content__title{
+                .three-prods-section__item .item-content__title{
                     color: #ffffff;
                     font-size: 28px;
                     font-weight: 600;
                 }
-                .prods-blocks__item:nth-child(3n+1) .item-content__title{
+                .three-prods-section__item:nth-child(3n+1) .item-content__title{
                     margin-bottom: 0;
                 }
-                .prods-blocks__item:nth-child(3n+2) .item-content__title, .prods-blocks__item:nth-child(3n+3) .item-content__title{
+                .three-prods-section__item:nth-child(3n+2) .item-content__title, .three-prods-section__item:nth-child(3n+3) .item-content__title{
                     margin: 0;
                 }
                 .item-content__button button{
@@ -213,47 +213,47 @@
                     border-radius: 5px;
                     overflow: hidden;
                 }
-                .prods-blocks__item:nth-child(3n+2) .item-content__button, .prods-blocks__item:nth-child(3n+3) .item-content__button{
+                .three-prods-section__item:nth-child(3n+2) .item-content__button, .three-prods-section__item:nth-child(3n+3) .item-content__button{
                     display: none;
                 }
-            .item-img{
+            .three-prods-section__item .item-img{
                 overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-                .prods-blocks__item:nth-child(3n+1) .item-img{
+                .three-prods-section__item:nth-child(3n+1) .item-img{
                     width: 50%;
                     height: 100%;   
                 }
        
                 
 @media  screen and (max-width: 700px) {
-    .prods-blocks__container{
+    .three-prods-section__container{
        flex-direction: column;
        position: static;
        height: auto;
     }
-        .prods-blocks__reverse .prods-blocks__item:nth-child(3n+1){
+        .three-prods-sections__reverse .three-prods-section__item:nth-child(3n+1){
             margin-left: 0;
             
         }
-        .prods-blocks__container .prods-blocks__item{
+        .three-prods-section__container .three-prods-section__item{
             margin: 15px 0;
             width: 100%;
             
         }
-        .prods-blocks__item:nth-child(3n+1){
+        .three-prods-section__item:nth-child(3n+1){
             height: 400px;
             position: relative;
         }
-        .prods-blocks__item:nth-child(3n+2), .prods-blocks__item:nth-child(3n+3){
+        .three-prods-section__item:nth-child(3n+2), .three-prods-section__item:nth-child(3n+3){
             height: 200px;
         }
-        .prods-blocks__item:nth-child(3n+3){
+        .three-prods-section__item:nth-child(3n+3){
             position: static;
         }
-            .prods-blocks__item:nth-child(3n+1) .item-content{
+            .three-prods-section__item:nth-child(3n+1) .item-content{
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -263,13 +263,13 @@
                 text-align: center;
                 padding: 100px 100px 0 100px;
             }
-                .prods-blocks__item:nth-child(3n+1) .item-content__title{
+                .three-prods-section__item:nth-child(3n+1) .item-content__title{
                     font-size: 32px;
                 }
-                .item-content__button button{
+                .three-prods-section__item .item-content__button button{
                     padding: 15px 80px;
                 }
-            .prods-blocks__item:nth-child(3n+1) .item-img{
+            .three-prods-section__item:nth-child(3n+1) .item-img{
                 width: 100%;
             }
 

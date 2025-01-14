@@ -1,10 +1,10 @@
 {%- if section.blocks.size > 0 -%}
-  <div class="page-width three-prods-section">
-    <div class="three-prods-section__container {% if section.settings.reverse_of_section %}three-prods-section__reverse{% endif %}">
+  <div class="page-width many-prods-section">
+    <div class="many-prods-section__container">
           {%- for block in section.blocks -%}
-            {%- if block.settings.prod_block != blank -%}
+            {%- if block.settings.type == "product" and block.settings.prod_block != blank -%}
               {%- assign product = block.settings.prod_block -%}
-              <div class="three-prods-section__item">
+              <div class="many-prods-section__item">
                 <div class="item-content">
                   <h4 class="item-content__title">{{ product.title }}</h4>
                   <div class="item-content__text">
@@ -16,6 +16,15 @@
                   {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
                 </div>
               </div>
+              {% elsif block.settings.type == "product_list" and block.settings.product_list != blank %}
+                {%- assign products = block.settings.product_list -%}
+                {% for product in products %}
+                <div class="many-prods-section__item two-products">
+                  <div class="two-products__item">
+                    {{ product | json}}
+                  </div>
+                </div>
+                {% endfor %}
             {%- endif -%}
           {%- endfor -%}
     </div>
@@ -24,34 +33,34 @@
   
   {% schema %}
   {
-    "name": "3 Products Section",
+    "name": "Many Products Section",
     "tag": "section",
     "class": "section",
-    "max_blocks": 3,
     "settings": [
-      {
-      "type": "checkbox",
-      "id": "reverse_of_section",
-      "default": false,
-      "label": "Reverse of section"
-      }
+     
     ],
     "blocks": [
       {
         "type": "product",
-        "name": "Product",
+        "name": "Products",
         "settings": [
           {
             "type": "product",
             "id": "prod_block",
             "label": "Select product"
+          },
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Select Products",
+            "limit": 2
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "3 Products Section"
+        "name": "Many Products Section"
       }
     ]
   }
