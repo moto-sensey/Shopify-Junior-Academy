@@ -1,7 +1,7 @@
 <div class="page-width">
   {% if section.settings.get_image != blank %}
     <div id="get_image" style="display: flex; justify-content: center;">
-      <img height="" width="" src="{{ section.settings.get_image | image_url: width: 700 }}">
+      {{ section.settings.get_image | image_url: width: 700 | image_tag: class: 'picture', loading: 'lazy' }}
     </div>
   {% endif %}
 </div>

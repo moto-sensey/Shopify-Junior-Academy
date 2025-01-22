@@ -1,10 +1,10 @@
 {%- if section.blocks.size > 0 -%}
   <div class="page-width three-prods-section">
-    <div class="three-prods-section__container {% if section.settings.reverse_of_section %}three-prods-section__reverse{% endif %}">
+    <div class="prods-section__container {% if section.settings.reverse_of_section %}three-prods-section__reverse{% endif %}">
           {%- for block in section.blocks -%}
             {%- if block.settings.prod_block != blank -%}
               {%- assign product = block.settings.prod_block -%}
-              <div class="three-prods-section__item">
+              <div class="prods-section__item">
                 <div class="item-content">
                   <h4 class="item-content__title">{{ product.title }}</h4>
                   <div class="item-content__text">
@@ -27,14 +27,8 @@
     "name": "3 Products Section",
     "tag": "section",
     "class": "section",
-    "max_blocks": 3,
     "settings": [
-      {
-      "type": "checkbox",
-      "id": "reverse_of_section",
-      "default": false,
-      "label": "Reverse of section"
-      }
+
     ],
     "blocks": [
       {
@@ -51,7 +45,7 @@
     ],
     "presets": [
       {
-        "name": "3 Products Section"
+        "name": "Products Section"
       }
     ]
   }

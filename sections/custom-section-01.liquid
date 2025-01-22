@@ -1,10 +1,17 @@
 {%- if section.blocks.size > 0 -%}
   <div class="page-width many-prods-section">
     <div class="many-prods-section__container">
+      <div>
+        <h2 class="section-title">Three pictures in a block</h2>
+        <p class="section-description">
+          Add images to all picture selection fields. If you want to place the block elements in reverse order, toggle the switch above the picture selection fields
+        </p>
+      </div>
           {%- for block in section.blocks -%}
+            <div class="three-prods-block {% if block.settings.reverse_block == true %}reverse{% endif %}">
             {%- if block.settings.prod_block != blank -%}
               {%- assign product = block.settings.prod_block -%}
-              <div class="many-prods-section__item one-product">
+              <div class="three-prods-block__item one-product">
                 <div class="item-content">
                   <h4 class="item-content__title">{{ product.title }}</h4>
                   <div class="item-content__text">
@@ -13,28 +20,30 @@
                   <div class="item-content__button"><button>Shop now!</button></div>
                 </div>
                 <div class="item-img">
-                  {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
+                  {{ product.featured_image | image_url: width: 300 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
                 </div>
               </div>
-              {% elsif block.settings.product_list != blank %}
+              
+            {%- endif -%}
+            {% if block.settings.product_list != blank %}
                 {%- assign products = block.settings.product_list -%}
+                <div class="three-prods-block__item two-products">
                 {% for product in products %}
-                <div class="many-prods-section__item two-products">
                   <div class="two-products__item">
                     <div class="item-content">
                       <h4 class="item-content__title">{{ product.title }}</h4>
                       <div class="item-content__text">
                         <p>Rerum eveniet eius voluptates consectetur dicta quidem.</p>
                       </div>
-                      <div class="item-content__button"><button>Shop now!</button></div>
                     </div>
                     <div class="item-img">
-                      {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
+                      {{ product.featured_image | image_url: width: 150 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
                     </div>
                   </div>
-                </div>
                 {% endfor %}
-            {%- endif -%}
+              </div>
+            {% endif %}
+            </div>
           {%- endfor -%}
     </div>
   </div>
@@ -46,7 +55,11 @@
     "tag": "section",
     "class": "section",
     "settings": [
-      
+      {
+        "type": "header",
+        "content": "Three pictures in a block",
+        "info": "Add images to all picture selection fields. If you want to place the block elements in reverse order, toggle the switch above the picture selection fields"
+      }
     ],
     "blocks": [
       {
@@ -54,18 +67,15 @@
         "name": "Products",
         "settings": [
           {
-            "type": "header",
-            "content": "WARNING FUCK YOUR MOTHER!!!",
-            "info": "I don't let you choose more than one type of block!!! But if you really want to break the layout, then fuck you, do whatever you want))"
+            "type": "checkbox",
+            "id": "reverse_block",
+            "default": false,
+            "label": "Reverse block"
           },
           {
             "type": "product",
             "id": "prod_block",
             "label": "Select product"
-          },
-          {
-            "type": "header",
-            "content": "OR"
           },
           {
             "type": "product_list",

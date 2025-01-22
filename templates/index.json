@@ -158,42 +158,85 @@
         "slider_items_mob": 1
       }
     },
-    "custom_section_00_RQkBDp": {
-      "type": "custom-section-00",
+    "custom_section_01_rdi7Cw": {
+      "type": "custom-prods-section",
       "blocks": {
-        "product_GcqYtq": {
+        "product_M3CHUc": {
           "type": "product",
           "settings": {
-            "prod_block": "dawson-trolley"
+            "reverse_block": false,
+            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+            "product_list": [
+              "ayers-chambray",
+              "dji-spark-fly-more-combo-quadcopter-alpine-white-1"
+            ]
           }
         },
-        "product_DjbrkG": {
+        "product_eWtBVz": {
           "type": "product",
           "settings": {
-            "prod_block": "snow-peak-titanium-single-wall-cup"
-          }
-        },
-        "product_wPTjEh": {
-          "type": "product",
-          "settings": {
-            "prod_block": "cydney-plaid"
+            "reverse_block": true,
+            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-2",
+            "product_list": [
+              "camp-stool",
+              "dji-mavic-pro-platinum-with-remote-controller-platinum-4"
+            ]
           }
         }
       },
       "block_order": [
-        "product_GcqYtq",
-        "product_DjbrkG",
-        "product_wPTjEh"
+        "product_M3CHUc",
+        "product_eWtBVz"
       ],
-      "settings": {
-        "reverse_of_section": false
-      }
+      "settings": {}
     },
     "image_get_links_LGV7jP": {
       "type": "image-get-links",
       "settings": {
         "get_image": "shopify://shop_images/9_dc40da87-6ead-4b4b-be43-457eb7a531ff.jpg"
       }
+    },
+    "test_custom_section_zUbXYV": {
+      "type": "test-custom-section",
+      "blocks": {
+        "product_paVK3P": {
+          "type": "product",
+          "settings": {
+            "one_prod": "camp-stool"
+          }
+        },
+        "product_list_6Ta9Y8": {
+          "type": "product_list",
+          "settings": {
+            "two_prods": [
+              "dji-mavic-pro-platinum-with-remote-controller-platinum-4",
+              "protocol-videodrone-ap-drone-with-remote-controller-black-3"
+            ]
+          }
+        },
+        "product_list_fP4KeQ": {
+          "type": "product_list",
+          "settings": {
+            "two_prods": [
+              "5-panel-hat",
+              "ayers-chambray"
+            ]
+          }
+        },
+        "product_ytdnAH": {
+          "type": "product",
+          "settings": {
+            "one_prod": "dji-spark-fly-more-combo-quadcopter-alpine-white-2"
+          }
+        }
+      },
+      "block_order": [
+        "product_paVK3P",
+        "product_list_6Ta9Y8",
+        "product_list_fP4KeQ",
+        "product_ytdnAH"
+      ],
+      "settings": {}
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -222,39 +265,14 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "test_custom_section_zUbXYV": {
-      "type": "test-custom-section",
-      "blocks": {
-        "product_ytdnAH": {
-          "type": "product",
-          "settings": {
-            "one_prod": "dji-spark-fly-more-combo-quadcopter-alpine-white-2"
-          }
-        },
-        "product_list_fP4KeQ": {
-          "type": "product_list",
-          "settings": {
-            "two_prods": [
-              "5-panel-hat",
-              "ayers-chambray"
-            ]
-          }
-        }
-      },
-      "block_order": [
-        "product_ytdnAH",
-        "product_list_fP4KeQ"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
-    "custom_section_00_RQkBDp",
+    "custom_section_01_rdi7Cw",
     "image_get_links_LGV7jP",
-    "featured_collection",
-    "test_custom_section_zUbXYV"
+    "test_custom_section_zUbXYV",
+    "featured_collection"
   ]
 }

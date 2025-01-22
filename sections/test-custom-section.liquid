@@ -1,6 +1,13 @@
 {%- if section.blocks.size > 0 -%}
     <div class="prods-section">
       <div class="page-width prods-section__container">
+        <div>
+          <h2 class="section-title">Blocks with one or two pictures</h2>
+          <p class="section-description">
+            Select the block you want to add next to the section, then select the next block, and then as many as you need
+          </p>
+        </div>
+        
             {%- for block in section.blocks -%}
               {%- if block.type == 'product' and block.settings.one_prod != blank -%}
                 {%- assign product = block.settings.one_prod -%}
@@ -18,27 +25,26 @@
                     </div>
                   </div>
                   <div class="item-img">
-                    {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', alt: 'No image', loading: 'lazy'}}
+                    {{ product.featured_image | image_url: width: 300 | image_tag: class: 'item-img__picture', alt: 'No image', loading: 'lazy'}}
                   </div>
                 </div>
                 {%  elsif block.type == 'product_list' and block.settings.two_prods != blank%}
                   {%- assign products = block.settings.two_prods -%}
+                  <div class="prods-section__item two-products">
                   {% for product in products %}
-                    <div class="prods-section__item two-products">
                       <div class="two-products__item">
                         <div class="item-content">
                           <h4 class="item-content__title">{{ product.title }}</h4>
                           <div class="item-content__text">
                             <p>Rerum eveniet eius voluptates consectetur dicta quidem.</p>
                           </div>
-                          <div class="item-content__button"><button>Shop now!</button></div>
                         </div>
                         <div class="item-img">
-                          {{ product.featured_image | image_url: width: 200 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
+                          {{ product.featured_image | image_url: width: 150 | image_tag: class: 'item-img__picture', loading: 'lazy' }}
                         </div>
                       </div>
-                    </div>
                     {% endfor %}
+                  </div>
               {%- endif -%}
             {%- endfor -%}
       </div>
@@ -56,7 +62,11 @@
       "tag": "section",
       "class": "section",
       "settings": [
-       
+        {
+          "type": "header",
+          "content": "Blocks with one or two pictures",
+          "info": "Select the block you want to add next to the section, then select the next block, and then as many as you need"
+        }
       ],
       "blocks": [
         {
