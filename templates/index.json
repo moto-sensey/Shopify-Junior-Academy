@@ -223,49 +223,28 @@
         "padding_bottom": 36
       }
     },
-    "custom_section_01_VkFAjd": {
-      "type": "custom-section-01",
+    "test_custom_section_zUbXYV": {
+      "type": "test-custom-section",
       "blocks": {
-        "product_MBjUHw": {
+        "product_ytdnAH": {
           "type": "product",
           "settings": {
-            "prod_block": "dji-mavic-pro-platinum-with-remote-controller-platinum-1",
-            "product_list": []
+            "one_prod": "dji-spark-fly-more-combo-quadcopter-alpine-white-2"
           }
         },
-        "product_8eKcMG": {
-          "type": "product",
+        "product_list_fP4KeQ": {
+          "type": "product_list",
           "settings": {
-            "prod_block": "",
-            "product_list": [
-              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+            "two_prods": [
+              "5-panel-hat",
               "ayers-chambray"
             ]
-          }
-        },
-        "product_H6yqx9": {
-          "type": "product",
-          "settings": {
-            "prod_block": "",
-            "product_list": [
-              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
-              "ayers-chambray"
-            ]
-          }
-        },
-        "product_gLqTRb": {
-          "type": "product",
-          "settings": {
-            "prod_block": "5-panel-hat",
-            "product_list": []
           }
         }
       },
       "block_order": [
-        "product_MBjUHw",
-        "product_8eKcMG",
-        "product_H6yqx9",
-        "product_gLqTRb"
+        "product_ytdnAH",
+        "product_list_fP4KeQ"
       ],
       "settings": {}
     }
@@ -276,6 +255,6 @@
     "custom_section_00_RQkBDp",
     "image_get_links_LGV7jP",
     "featured_collection",
-    "custom_section_01_VkFAjd"
+    "test_custom_section_zUbXYV"
   ]
 }
