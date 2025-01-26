@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "text_DpkynB": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iste porro eligendi provident, esse consequuntur temporibus repellendus iusto molestias sed. Dolor repellat provident a saepe tenetur beatae pariatur qui sapiente.",
+            "text_style": "subtitle"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -33,16 +40,18 @@
       },
       "block_order": [
         "heading",
+        "text_DpkynB",
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/banner_20639227-1120-46c8-981e-774411f403e4.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-3",
-        "image_behavior": "none",
+        "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -158,35 +167,35 @@
         "slider_items_mob": 1
       }
     },
-    "custom_section_01_rdi7Cw": {
-      "type": "custom-prods-section",
+    "custom_section_01_m8XhCf": {
+      "type": "custom-section-01",
       "blocks": {
-        "product_M3CHUc": {
+        "product_J77mgn": {
           "type": "product",
           "settings": {
             "reverse_block": false,
-            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+            "prod_block": "5-panel-hat",
             "product_list": [
-              "ayers-chambray",
-              "dji-spark-fly-more-combo-quadcopter-alpine-white-1"
+              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
+              "ayers-chambray"
             ]
           }
         },
-        "product_eWtBVz": {
+        "product_jBxfwJ": {
           "type": "product",
           "settings": {
             "reverse_block": true,
-            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-2",
+            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-1",
             "product_list": [
-              "camp-stool",
+              "protocol-videodrone-ap-drone-with-remote-controller-black-1",
               "dji-mavic-pro-platinum-with-remote-controller-platinum-4"
             ]
           }
         }
       },
       "block_order": [
-        "product_M3CHUc",
-        "product_eWtBVz"
+        "product_J77mgn",
+        "product_jBxfwJ"
       ],
       "settings": {}
     },
@@ -265,14 +274,58 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_prods_section_mzt8KL": {
+      "type": "custom-prods-section",
+      "blocks": {
+        "product_aBRqnG": {
+          "type": "product",
+          "settings": {
+            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-1"
+          }
+        },
+        "product_TjXaQY": {
+          "type": "product",
+          "settings": {
+            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-6"
+          }
+        },
+        "product_rqtHmc": {
+          "type": "product",
+          "settings": {
+            "prod_block": "dji-mavic-pro-platinum-with-remote-controller-platinum-4"
+          }
+        },
+        "product_dp3DTy": {
+          "type": "product",
+          "settings": {
+            "prod_block": "ayers-chambray"
+          }
+        },
+        "product_ckCbm7": {
+          "type": "product",
+          "settings": {
+            "prod_block": "5-panel-hat"
+          }
+        }
+      },
+      "block_order": [
+        "product_aBRqnG",
+        "product_TjXaQY",
+        "product_rqtHmc",
+        "product_dp3DTy",
+        "product_ckCbm7"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
-    "custom_section_01_rdi7Cw",
+    "custom_section_01_m8XhCf",
     "image_get_links_LGV7jP",
     "test_custom_section_zUbXYV",
-    "featured_collection"
+    "featured_collection",
+    "custom_prods_section_mzt8KL"
   ]
 }

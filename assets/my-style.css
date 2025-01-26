@@ -117,31 +117,26 @@
 
                     }
 
-/* custom section 00 START */
-.prods-section{
+/* custom prods section START */
+.custom-prods-section{
     padding: 15px 0;
 }
-    .prods-section__container, .prods-section__item{
+    .custom-prods-section__container{
         display: flex;
-        
-    }
-    .prods-section__container{
-        height: 300px;
         width:100%;
-        
     }
-        .prods-section__item{
+        .custom-prods-section__item{
             box-shadow: 0px 0px 3px #646464;
             overflow: hidden;
             border-radius: 10px;
         }
-            .prods-section__item .item-content{
+            .custom-prods-section__item .item-content{
                 display: flex;
                 flex-direction: column;
                 color: #ffffff;
                 overflow: hidden;
             }
-                .prods-section__item .item-content__title{
+                .custom-prods-section__item .item-content__title{
                     color: #ffffff;
                     font-size: 28px;
                     font-weight: 600;
@@ -155,27 +150,26 @@
                     border-radius: 5px;
                     overflow: hidden;
                 }   
-            .prods-section__item .item-img{
+            .custom-prods-section__item .item-img{
                 overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }   
 @media  screen and (max-width: 700px) {
-    .prods-section__container{
+    .custom-prods-section__container{
        flex-direction: column;
-       height: auto;
     }
-        .prods-section__container .prods-section__item{
+        .custom-prods-section__container .custom-prods-section__item{
             margin: 15px 0;
             width: 100%;
         }
-            .prods-section__item .item-content__button button{
+            .custom-prods-section__item .item-content__button button{
                 padding: 15px 80px;
             }
 }
 
-/* custom section 00 END */
+/* custom prods section END */
 /* Test custom section START */
 
 .prods-section__container{
