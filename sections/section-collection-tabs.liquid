@@ -14,15 +14,13 @@
         <div class="section-collection-tabs__tab tab">
           <div class="section-collection-tabs__tab-head tab__headings">
             <ul class="list">
-              <li class="list__item active">
-                <a href="#" class="list__link">Description</a>
-              </li>
-              <li class="list__item">
-                <a href="#" class="list__link">Details</a>
-              </li>
-              <li class="list__item">
-                <a href="#" class="list__link">Characteristics</a>
-              </li>
+              {% for block in section.blocks %}
+                {% if block.settings.collection != blank %}
+                  <li class="list__item active">
+                    <a href="#" class="list__link">{{ block.settings.collection.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
           <div class="section-collection-tabs__tab-body tab__body">
