@@ -167,6 +167,45 @@
         "slider_items_mob": 1
       }
     },
+    "section_collection_tabs_eTXRN4": {
+      "type": "section-collection-tabs",
+      "blocks": {
+        "collection_tab_Axcyrx": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_tab_KyMHPQ": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_tab_Am9BAJ": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_tab_DYcYFh": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_tab_Axcyrx",
+        "collection_tab_KyMHPQ",
+        "collection_tab_Am9BAJ",
+        "collection_tab_DYcYFh"
+      ],
+      "settings": {
+        "title": "Favorite products",
+        "description": "<p>Chose your dream</p>"
+      }
+    },
     "custom_section_01_m8XhCf": {
       "type": "custom-section-01",
       "blocks": {
@@ -198,12 +237,6 @@
         "product_jBxfwJ"
       ],
       "settings": {}
-    },
-    "image_get_links_LGV7jP": {
-      "type": "image-get-links",
-      "settings": {
-        "get_image": "shopify://shop_images/9_dc40da87-6ead-4b4b-be43-457eb7a531ff.jpg"
-      }
     },
     "test_custom_section_zUbXYV": {
       "type": "test-custom-section",
@@ -246,34 +279,6 @@
         "product_ytdnAH"
       ],
       "settings": {}
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
     },
     "custom_prods_section_mzt8KL": {
       "type": "custom-prods-section",
@@ -322,10 +327,9 @@
   "order": [
     "image_banner",
     "section_slider_products_DxhpTC",
+    "section_collection_tabs_eTXRN4",
     "custom_section_01_m8XhCf",
-    "image_get_links_LGV7jP",
     "test_custom_section_zUbXYV",
-    "featured_collection",
     "custom_prods_section_mzt8KL"
   ]
 }

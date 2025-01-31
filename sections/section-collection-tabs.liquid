@@ -1,0 +1,84 @@
+{{ 'section-collection-tabs.css' | asset_url | stylesheet_tag }}
+{% if section.blocks.size > 0 %}
+  <div class="section-collection-tabs__section">
+    <div class="page-width section-collection-tabs__container">
+      <div class="section-collection-tabs__heading">
+        {% if section.settings.title != blank %}
+          <h2 class="section-collection-tabs__title">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <p class="section-collection-tabs__title">{{ section.settings.description }}</p>
+        {% endif %}
+      </div>
+      <div class="section-collection-tabs__content">
+        <div class="section-collection-tabs__tab tab">
+          <div class="section-collection-tabs__tab-head tab__headings">
+            <ul class="list">
+              <li class="list__item active">
+                <a href="#" class="list__link">Description</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Details</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Characteristics</a>
+              </li>
+            </ul>
+          </div>
+          <div class="section-collection-tabs__tab-body tab__body">
+            <ul class="list">
+              <li class="list__item active">
+                (1)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
+              <li class="list__item">
+                (2)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
+              <li class="list__item">
+                (3)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Collection tabs",
+  "tag": "section",
+  "class": "section section-collection-tabs",
+  "limit": 1,
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Favorite products"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Section description",
+      "default": "<p>Chose your dream<\/>"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collection tab",
+      "type": "collection_tab",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection tabs"
+    }
+  ]
+}
+{% endschema %}

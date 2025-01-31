@@ -174,25 +174,57 @@
 
 .prods-section__container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
     .prods-section__item{
-        width: 50%;
+        width: 48%;
+        height: 300px;
+        margin: 10px;
+       
+    }
+    .item-content .item-content__title, .item-content .item-content__text{
+        color: #ffffff;
     }
     .one-product, .two-products__item{
         display: flex;
     }
+        .one-product .item-img, .two-products__item .item-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 /* one-product-block start */
 
 .one-product{
-    height: 400px;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 2px #646464;
 }
-.one-product .item-content{}
+.one-product .item-content{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    width: 50%;
+    padding: 40px 20px;
+    
+    background-color: #64646485;
+    
+}
     .one-product .item-content__title{}
     .one-product .item-content__text{}
     .one-product .item-content__btn{}
-    .one-product .item-content__btn button{}
+    .one-product .item-content__btn button{
+        background-color: #F45B53;
+                    color: #ffffff;
+                    padding: 10px 20px;
+                    border: 0;
+                    outline: 0;
+                    border-radius: 5px;
+                    overflow: hidden;
+    }
 .one-product .item-img{}
     .one-product .item-img__picture{}
 
@@ -204,9 +236,20 @@
     flex-direction: column;
 }
     .two-products__item{
-        height: 200px;
+        height: 50%;
+        border: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 2px #646464;
     }
-        .two-products .item-content{}
+    .two-products__item:first-child{
+        margin-bottom: 20px;
+    }
+        .two-products .item-content{
+            width: 70%;
+            padding: 20px;
+            background-color: #F45B53;
+        }
             .two-products .item-content__title{}
             .two-products .item-content__text{}
         .two-products .item-img{}
