@@ -173,25 +173,36 @@
         "collection_tab_Axcyrx": {
           "type": "collection_tab",
           "settings": {
-            "collection": "man"
+            "collection": "man",
+            "alt_title": ""
           }
         },
         "collection_tab_KyMHPQ": {
           "type": "collection_tab",
           "settings": {
-            "collection": "woman"
+            "collection": "woman",
+            "alt_title": ""
           }
         },
         "collection_tab_Am9BAJ": {
           "type": "collection_tab",
           "settings": {
-            "collection": "summer"
+            "collection": "summer",
+            "alt_title": ""
           }
         },
         "collection_tab_DYcYFh": {
           "type": "collection_tab",
           "settings": {
-            "collection": "winter"
+            "collection": "winter",
+            "alt_title": ""
+          }
+        },
+        "collection_tab_QNC8ER": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "with-sale",
+            "alt_title": ""
           }
         }
       },
@@ -199,7 +210,8 @@
         "collection_tab_Axcyrx",
         "collection_tab_KyMHPQ",
         "collection_tab_Am9BAJ",
-        "collection_tab_DYcYFh"
+        "collection_tab_DYcYFh",
+        "collection_tab_QNC8ER"
       ],
       "settings": {
         "title": "Favorite products",
@@ -215,8 +227,8 @@
             "reverse_block": false,
             "prod_block": "5-panel-hat",
             "product_list": [
-              "dji-spark-fly-more-combo-quadcopter-alpine-white-6",
-              "ayers-chambray"
+              "ayers-chambray",
+              "cydney-plaid"
             ]
           }
         },
@@ -227,7 +239,7 @@
             "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-1",
             "product_list": [
               "protocol-videodrone-ap-drone-with-remote-controller-black-1",
-              "dji-mavic-pro-platinum-with-remote-controller-platinum-4"
+              "canvas-lunch-bag"
             ]
           }
         }
@@ -244,15 +256,15 @@
         "product_paVK3P": {
           "type": "product",
           "settings": {
-            "one_prod": "camp-stool"
+            "one_prod": "derby-tier-backpack"
           }
         },
         "product_list_6Ta9Y8": {
           "type": "product_list",
           "settings": {
             "two_prods": [
-              "dji-mavic-pro-platinum-with-remote-controller-platinum-4",
-              "protocol-videodrone-ap-drone-with-remote-controller-black-3"
+              "protocol-videodrone-ap-drone-with-remote-controller-black-3",
+              "ayers-chambray"
             ]
           }
         },
@@ -292,13 +304,13 @@
         "product_TjXaQY": {
           "type": "product",
           "settings": {
-            "prod_block": "dji-spark-fly-more-combo-quadcopter-alpine-white-6"
+            "prod_block": "canvas-lunch-bag"
           }
         },
         "product_rqtHmc": {
           "type": "product",
           "settings": {
-            "prod_block": "dji-mavic-pro-platinum-with-remote-controller-platinum-4"
+            "prod_block": "chevron"
           }
         },
         "product_dp3DTy": {

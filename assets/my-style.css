@@ -174,13 +174,11 @@
 
 .prods-section__container{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
     .prods-section__item{
         width: 48%;
         height: 300px;
-        margin: 10px;
        
     }
     .item-content .item-content__title, .item-content .item-content__text{

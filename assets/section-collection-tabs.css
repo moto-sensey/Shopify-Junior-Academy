@@ -6,8 +6,8 @@
         color: #000000;
     }
 .tab{
-    max-width: 800px;
-    margin: 0 auto;
+   
+    
     border: 2px solid #f1f1f1;
 }
     .tab__headings{
@@ -37,4 +37,7 @@
         }
         .tab__body .list__item.active{
             display: block;
+        }
+        .see_everything_btn{
+            text-align: center;
         }

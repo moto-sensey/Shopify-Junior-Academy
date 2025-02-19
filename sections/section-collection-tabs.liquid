@@ -1,4 +1,11 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-tabs.css' | asset_url | stylesheet_tag }}
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 {% if section.blocks.size > 0 %}
   <div class="section-collection-tabs__section">
     <div class="page-width section-collection-tabs__container">
@@ -14,23 +21,54 @@
         <div class="section-collection-tabs__tab tab">
           <div class="section-collection-tabs__tab-head tab__headings">
             <ul class="list">
+              {% assign i = 0 %}
               {% for block in section.blocks %}
                 {% if block.settings.collection != blank %}
-                  <li class="list__item active">
-                    <a href="#" class="list__link">{{ block.settings.collection.title }}</a>
-                  </li>
+                  {% assign collection_tab = block.settings.collection %}
+                  {% if collection_tab.all_products_count > 0 %}
+                    <li class="list__item {% if i == 0 %}active{% endif %}">
+                      <a href="#" class="list__link">{{ block.settings.alt_title | default: collection_tab.title }}</a>
+                    </li>
+                    {% assign i = 1 %}
+                  {% endif %}
                 {% endif %}
               {% endfor %}
             </ul>
           </div>
           <div class="section-collection-tabs__tab-body tab__body">
             <ul class="list">
-              <li class="list__item active">
-                (1)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
-              <li class="list__item">
-                (2)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
-              <li class="list__item">
-                (3)Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores fuga nesciunt quasi expedita possimus esse ipsum facere pariatur a corrupti eligendi. In sapiente eos delectus! Ad velit provident tenetur.</li>
+              {% assign j = 0 %}
+              {% for block in section.blocks %}
+                {% if block.settings.collection != blank %}
+                  {% assign collection_tab = block.settings.collection %}
+                  <li class="list__item {% if j == 0 %}active{% endif %}">
+                  {% if collection_tab.all_products_count > 0 %}
+                    <ul class="grid product-grid contains-card contains-card--product">
+                      {% for tab_product in collection_tab.products limit: 6 %}
+                        <li class="grid__item">
+                          {% render 'card-product',
+                            card_product: tab_product,
+                            media_aspect_ratio: "adapt",
+                            image_shape: "default",
+                            show_secondary_image: true,
+                            show_vendor: true,
+                            show_rating: false,
+                            section_id: section.id,
+                            quick_add: "standard"
+                          %}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    <div class="see_everything_btn">
+                      <a href="{{ collection_tab.url }}" class="button">{{ section.settings.btn_text }} in {{ collection_tab.title }}</a>
+                    </div> 
+                  {% else %}
+                    We havn't products in this collection
+                  {% endif %}
+                  {% assign j = 1 %}
+                </li>
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
         </div>
@@ -45,7 +83,7 @@
   "tag": "section",
   "class": "section section-collection-tabs",
   "limit": 1,
-  "max_blocks": 4,
+  "max_blocks": 5,
   "settings": [
     {
       "type": "text",
@@ -58,6 +96,13 @@
       "id": "description",
       "label": "Section description",
       "default": "<p>Chose your dream<\/>"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text",
+      "info": "Use a title instead of the standart collection title",
+      "default": "View All"
     }
   ],
   "blocks": [
@@ -69,6 +114,12 @@
           "type": "collection",
           "id": "collection",
           "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "alt_title",
+          "label": "Collection alternative title",
+          "info": "Use a title instead of the standart collection title"
         }
       ]
     }
