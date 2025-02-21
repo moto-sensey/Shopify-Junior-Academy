@@ -11,13 +11,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "coagex_section_with_3_blocks_TY7Nhz": {
+      "type": "coagex-section-with-3-blocks",
+      "settings": {}
+    },
+    "coagex_section_with_slider_iVdd3P": {
+      "type": "coagex-section-with-slider",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "coagex_section_with_3_blocks_TY7Nhz",
+    "coagex_section_with_slider_iVdd3P"
   ]
 }
